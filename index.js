@@ -44,9 +44,9 @@ app.use('/api',commentroute);
 app.use('/api/cart',cartroute);
 
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'dist/index.html'));
+// });
 
 app.use(function (err, req, res, next) {
   if (err.name === 'UnauthorizedError') {
