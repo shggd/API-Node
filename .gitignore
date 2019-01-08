@@ -1,0 +1,16 @@
+
+# environment variables 
+.env
+
+node_modules/
+
+# dependencies
+/node_modules
+
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
