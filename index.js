@@ -13,7 +13,7 @@ let port = process.env.PORT || 8080;
 
 
 //Connect to Database
-mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}${process.env.DB_HOST}`,{useMongoClient:true},{useMongoClient:true})
+mongoose.connect(`mongodb://${process.env.DB_USER}:${process.env.DB_PASS}${process.env.DB_HOST}`,{useMongoClient:true})
   .then(()=>{console.log("DB connected")},
 err=>{console.log(err)});
 
