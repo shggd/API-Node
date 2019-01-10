@@ -245,7 +245,7 @@ Return [All dogs](#All-Dogs)
 
 ### Get Single dog:
 `GET api/doge/:id`  
-Return [Single](#Single-Dog-with-Comment)
+Return [Single dog](#Single-Dog-with-Comment)
 
 ### Get multiple products:
 `GET api/product/`  
