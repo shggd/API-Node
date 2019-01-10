@@ -209,8 +209,35 @@ Body example:
  "password":"example"
 }
 ```
-Return a [User](#User)
+Return a [User](#User)  
 Required fields: `email`,`username`,`password`
+
+### New Comment:
+`POST api/doge/:id/comment`  
+Body example:  
+```JSON
+{
+ "comment":"i like this"
+}
+```
+Authentication required  
+Required fields:`comment`  
+
+### Update Comment:
+`PUT api/doge/edit/:commentid`
+Body example:  
+```JSON
+{
+ "comment":"i like this"
+}
+```
+Authentication required  
+Required fields:`comment` 
+
+### Delete Comment:
+`DELETE api/delete/:commentid`  
+Authentication required  
+
 
 ### Get Dog:
 `GET api/doge`  
@@ -222,7 +249,7 @@ Return [Single](#Single-Dog-with-Comment)
 
 ### Get multiple products:
 `GET api/product/`  
-Return [Multiple Products](#Multiple-product)  
+Return [Multiple Products](#multiple-products)  
 
 Query Parameters:
 Change page:  
@@ -238,7 +265,7 @@ Return [Single Product](#Single-Product)
 
 ### Search Product:
 `GET api/product/search?keyword=awesome`  
-Return [Multiple Products](#Multiple-product)  
+Return [Multiple Products](#multiple-products)  
 
 
 ### Get order info:
